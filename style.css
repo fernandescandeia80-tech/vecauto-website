@@ -142,7 +142,7 @@ nav a:hover, nav a.active { color: var(--blue); }
 .hero-image {
     position: absolute;
     inset: 0;
-    background: url("images/iveco-principal.jpg") center 55% / cover no-repeat;
+    background: url("iveco-principal.jpg") center 55% / cover no-repeat;
     transform: scale(1.04);
     will-change: transform;
 }
