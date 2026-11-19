@@ -128,10 +128,13 @@ nav a:hover, nav a.active { color: var(--blue); }
 
 /* HERO */
 
+
+/* HERO — IMAGEM PRINCIPAL VECAUTO */
+
 .hero {
     min-height: 690px;
     height: min(760px, 90vh);
-    background: var(--navy);
+    background: #101d2b url("./iveco-principal.jpg") center 55% / cover no-repeat;
     position: relative;
     color: white;
     display: flex;
@@ -140,12 +143,20 @@ nav a:hover, nav a.active { color: var(--blue); }
 }
 
 .hero-image {
+    display: none;
+}
+
+.hero-overlay {
     position: absolute;
     inset: 0;
-    background: url("iveco-principal.jpg") center 55% / cover no-repeat;
-    transform: scale(1.04);
-    will-change: transform;
+    background: linear-gradient(
+        90deg,
+        rgba(11, 24, 38, 0.88) 0%,
+        rgba(11, 24, 38, 0.58) 48%,
+        rgba(11, 24, 38, 0.18) 100%
+    );
 }
+
 
 .hero-overlay {
     position: absolute;
